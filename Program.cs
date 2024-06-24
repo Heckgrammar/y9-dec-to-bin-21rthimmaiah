@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,16 +16,17 @@ namespace Y9_DEC_TO_BIN_SKELETON
             int myStringAsInt = Convert.ToInt32(myString); //watch me cast from string to int
 
             //MAIN:  NUMBER CONVERSION PROGRAM
-
+            Console.WriteLine(numberConversion(500,15));
             //CODE GOES HERE
         }
 
-        //static void means the function will not return a value so it does not need a data type 
+        //static void means the function will not return a value so it does not need a data type
         //...this function DOES return a value so the method must have a data type
         static string numberConversion(int number, int numberbase)
         {
-            //CODE GOES HERE
-
+            //    CODE GOES HERE
+            int calc = number + numberbase;
+            string result = calc.ToString();
             return result; //REMOVE THE RED LINE!
         }
     }
