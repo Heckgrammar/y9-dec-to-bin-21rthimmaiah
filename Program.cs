@@ -17,7 +17,16 @@ namespace Y9_DEC_TO_BIN_SKELETON
 
             //MAIN:  NUMBER CONVERSION PROGRAM
             Console.WriteLine(numberConversion(500,15));
+            string myStr = "hello";
+            Console.WriteLine(myStr + "World");
             //CODE GOES HERE
+            Console.WriteLine("Enter your denary number");
+            int denary = Convert.ToInt32(Console.ReadLine());
+            int remainder = 1;
+            string binary = " ";
+            while (remainder != 0) ;
+            remainder = denary % 2;
+
         }
 
         //static void means the function will not return a value so it does not need a data type
@@ -27,7 +36,10 @@ namespace Y9_DEC_TO_BIN_SKELETON
             //    CODE GOES HERE
             int calc = number + numberbase;
             string result = calc.ToString();
-            return result; //REMOVE THE RED LINE!
+            return result; //REMOVE THE RED LINE
+
+           
         }
+       
     }
 }
