@@ -16,7 +16,7 @@ namespace Y9_DEC_TO_BIN_SKELETON
             int myStringAsInt = Convert.ToInt32(myString); //watch me cast from string to int
 
             //MAIN:  NUMBER CONVERSION PROGRAM
-            Console.WriteLine(numberConversion(500,15));
+            Console.WriteLine(numberConversion(500, 15));
             string myStr = "hello";
             Console.WriteLine(myStr + "World");
             //CODE GOES HERE
@@ -24,9 +24,20 @@ namespace Y9_DEC_TO_BIN_SKELETON
             int denary = Convert.ToInt32(Console.ReadLine());
             int remainder = 1;
             string binary = " ";
-            while (remainder != 0) ;
+            int division = 1;
+            while (division != 0) { 
             remainder = denary % 2;
-
+            division = denary / 2;
+            binary = binary + remainder;
+                denary = division;
+        }
+            char[] binary2 = (binary.ToCharArray());
+            int step = binary2.Length;
+       
+            for (int i = step; i > 0; i --)
+            {
+                Console.WriteLine(binary2[i]);
+            }
         }
 
         //static void means the function will not return a value so it does not need a data type
