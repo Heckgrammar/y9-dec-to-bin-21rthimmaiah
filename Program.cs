@@ -19,6 +19,8 @@ namespace Y9_DEC_TO_BIN_SKELETON
             Console.WriteLine(numberConversion(500, 15));
             string myStr = "hello";
             Console.WriteLine(myStr + "World");
+
+
             //CODE GOES HERE
             Console.WriteLine("Enter your denary number");
             int denary = Convert.ToInt32(Console.ReadLine());
@@ -28,16 +30,18 @@ namespace Y9_DEC_TO_BIN_SKELETON
             while (division != 0) { 
             remainder = denary % 2;
             division = denary / 2;
-            binary = binary + remainder;
+             string remainder2 = Convert.ToString(remainder);
+            binary = (binary) + remainder2;
                 denary = division;
         }
             char[] binary2 = (binary.ToCharArray());
-            int step = binary2.Length;
+            int step = binary2.Length - 1;
        
             for (int i = step; i > 0; i --)
             {
-                Console.WriteLine(binary2[i]);
+                Console.Write(binary2[i]);
             }
+            Console.WriteLine(" ");
         }
 
         //static void means the function will not return a value so it does not need a data type
